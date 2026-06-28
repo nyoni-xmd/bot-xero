@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>XERO-MD Pairing</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <h1>⚡ XERO-MD</h1>
+                <p>POWER · SPEED · CONTROL</p>
+                <p class="tagline">BEYOND LIMITS</p>
+            </div>
+
+            <div class="pairing-box">
+                <h2>🔐 Pair Your Device</h2>
+                <p class="sub">Ingiza namba yako ya simu ili kupata code ya pairing</p>
+
+                <div class="input-group">
+                    <span class="country-code">+255</span>
+                    <input type="text" id="phoneInput" placeholder="712345678" maxlength="15" />
+                </div>
+
+                <button id="pairBtn">🚀 GET PAIRING CODE</button>
+
+                <div id="result" class="result-box hidden">
+                    <div class="code-display">
+                        <span id="pairingCode">------</span>
+                    </div>
+                    <p id="pairingMessage" class="message"></p>
+                    <button id="copyBtn" class="copy-btn">📋 Copy Code</button>
+                </div>
+
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Inasubiri...</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>POWERED BY <span class="highlight">nyoni-xmd</span></p>
+                <p class="small">XERO-MD v3.0.0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
